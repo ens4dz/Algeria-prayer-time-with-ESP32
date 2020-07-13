@@ -1,13 +1,13 @@
 
-#1-create  empty image with:
+# 1-create 3MB empty image with:
 python mk_espfatPython3.py
 Enter partition size (in hex or decimal) :
-3080192 (3MB)
+3080192
 
-#2-add db to filesystem.img:
+# 2-add db to filesystem.img:
 in windows add one of db file(Djelfa,Alger,Adrar) to image with any Fat12 editor (OSFMount,WinImage ..)
 
-3- flash that file (filesystem.img) to esp32:
+# 3- flash that file (filesystem.img) to esp32:
 go to esptool.py path, with cmd run esptools example:
 ```
 cd "F:\arduino-1.8.12\portable\packages\esp32\hardware\esp32\1.0.4\tools"
@@ -15,7 +15,7 @@ python esptool.py --chip esp32 -p com3 -b 921600 write_flash 0x111000 "F:\arduin
 ```
 
 
-#esp32 boot log:
+# esp32 boot log:
 ```
 ets Jun  8 2016 00:22:57
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
