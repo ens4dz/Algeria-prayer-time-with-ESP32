@@ -17,23 +17,9 @@ python esptool.py --chip esp32 -p com3 -b 921600 write_flash 0x111000 "F:\arduin
 
 # esp32 boot log:
 ```
-ets Jun  8 2016 00:22:57
-rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-configsip: 0, SPIWP:0xee
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-mode:DIO, clock div:1
-load:0x3fff0018,len:4
-load:0x3fff001c,len:1216
-ho 0 tail 12 room 4
-load:0x40078000,len:9720
-ho 0 tail 12 room 4
-load:0x40080400,len:6352
-entry 0x400806b8
-[D][esp32-hal-psram.c:47] psramInit(): PSRAM enabled
 Total space:    3026944
 Free space:     258048
 Listing directory: /
-  FILE: /Djelfa.db	SIZE: 2766848
   FILE: /Djelfa.db	SIZE: 2766848
 Opened database successfully
 SELECT _id,MADINA_ID,GeoDate,Fajr,Shurooq, Kibla, Dhuhr, Asr, Maghrib,Isha FROM itc_tab_mawakit_salat WHERE MADINA_ID = 1 AND GeoDate = '2019-07-19'
