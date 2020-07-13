@@ -1,5 +1,31 @@
 /*
-    This reades Alger database and retrieves them back  from the FFat file 
+    This reades Djelfa SQLITE3 database from the FFat file , other city id:
+id parent_id Name    
+1	/	الجلفة
+2	1	تبسة
+3	1	بئر العاتر
+4	1	خنشلة
+5	1	الوادي
+6	1	باتنة
+7	1	تقرت
+8	1	بسكرة
+10	1	بوسعادة
+11	1	عين الملح
+12	1	حاسي الرمل
+13	1	الأغواط
+14	1	عين وسارة
+15	1	تيسمسيلت
+16	1	تيارت
+17	1	البيض
+18	1	سعيدة
+19	1	معسكر
+20	1	النعامة
+21	1	سيدي بلعباس
+22	1	ابن باديس
+23	1	تلمسان
+24	1	عين تموشنت
+25	1	سبدو
+26	1	مغنية
 */
 #include <stdio.h>
 #include <stdlib.h>
