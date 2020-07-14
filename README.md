@@ -5,10 +5,11 @@ Enter partition size (in hex or decimal) :
 3080192
 
 # 2-add db to filesystem.img:
-in windows add one of db file(Djelfa,Alger,Adrar) to image with any Fat12 editor (OSFMount,WinImage ..)
+in windows add your files to image with any Fat12 editor (OSFMount,WinImage ..)
 
 # 3- flash that file (filesystem.img) to esp32:
-go to esptool.py path, with cmd run esptools example:
+go to esptool.py path, with cmd run esptools.
+example:
 ```
 cd "F:\arduino-1.8.12\portable\packages\esp32\hardware\esp32\1.0.4\tools"
 python esptool.py --chip esp32 -p com3 -b 921600 write_flash 0x111000 "F:\arduino-1.8.12\portable\sketchbook\sqlite3_FAT-salat\mk_espfat-master\filesystem.img"
